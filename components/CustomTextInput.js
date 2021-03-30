@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.grey,
     borderRadius: 5,
-    marginBottom: 10,
+    marginBottom: 8,
   },
   inputActive: {
     paddingVertical: 15,
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.main,
     borderRadius: 5,
-    marginBottom: 10,
+    marginBottom: 8,
   },
 });
 export default CustomTextInput;
