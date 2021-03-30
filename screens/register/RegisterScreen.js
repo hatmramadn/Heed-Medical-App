@@ -35,7 +35,7 @@ const RegisterScreen = ({navigation}) => {
             text1: '✅ Success ',
             text2: res.data.message,
           });
-          navigation.navigate('Home');
+          navigation.replace('Home');
         }
       })
       .catch(err => {
@@ -93,6 +93,7 @@ const RegisterScreen = ({navigation}) => {
                 value={value}
                 onBlur={onBlur}
                 handleChange={value => onChange(value)}
+                keyboardType="email-address"
               />
             )}
             name="email"
@@ -113,6 +114,7 @@ const RegisterScreen = ({navigation}) => {
                 value={value}
                 onBlur={onBlur}
                 handleChange={value => onChange(value)}
+                keyboardType="phone-pad"
               />
             )}
             name="phone"
@@ -151,6 +153,7 @@ const RegisterScreen = ({navigation}) => {
                 value={value}
                 onBlur={onBlur}
                 handleChange={value => onChange(value)}
+                handleSubmit={handleSubmit(onSubmit)}
               />
             )}
             name="password_confirmation"

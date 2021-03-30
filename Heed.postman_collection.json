@@ -1,0 +1,3751 @@
+{
+	"info": {
+		"_postman_id": "d437eef5-6077-4506-aa96-70b11f0fab92",
+		"name": "Heed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home Screen",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": "dfsdfsdfsdfsdasdsadsfdsfdsfdf"
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/home_screen",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"home_screen"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Home Screen",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": "dfsdfsdfsdfsdasdsadsfdsfdsfdf"
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/home_screen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"home_screen"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 14:52:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1597"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Home Screen\",\n    \"data\": {\n        \"ads\": {\n            \"desc\": \"Adv\",\n            \"clinic_id\": 0,\n            \"image\": \"http://localhost/Sites/HeedWeb/public/upload/ads/RBTB9.adv.png\"\n        },\n        \"slider\": [\n            {\n                \"id\": 2,\n                \"clinic_id\": 0,\n                \"desc\": \"Banner 1\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/slider/pjlMF.static-banner1.png\"\n            }\n        ],\n        \"categories\": [\n            {\n                \"id\": 1,\n                \"name\": \"Dental Clinics\",\n                \"icon\": \"http://localhost/Sites/HeedWeb/public/upload/categories/BA9Qq.dental@3x.png\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/categories/YekNG.sec1.png\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Opthomology\",\n                \"icon\": \"http://localhost/Sites/HeedWeb/public/upload/categories/27PdY.eye@3x.png\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/categories/5XPES.sec2.png\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Neuro Surgery\",\n                \"icon\": \"http://localhost/Sites/HeedWeb/public/upload/categories/xjslD.neuro@3x.png\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/categories/4bHyx.sec3.png\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Cardiology\",\n                \"icon\": \"http://localhost/Sites/HeedWeb/public/upload/categories/Pa2Hx.Cardiology@3x.png\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/categories/ktzik.sec4.png\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Medical Lab\",\n                \"icon\": \"http://localhost/Sites/HeedWeb/public/upload/categories/E6M3I.lab@3x.png\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/categories/8dgMm.sec5.png\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Ambulance\",\n                \"icon\": \"http://localhost/Sites/HeedWeb/public/upload/categories/fz2Oo.ambulance@3x.png\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/categories/Kjkwe.sec6.png\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "dfsdfsdfsdfsdasdsadsfdsfdsfdf",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Auth",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email_phone",
+							"value": "info@spud.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/login",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"value": "dfsdfsdfsdfsdasdsadsfdsfdsfdf",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "ios",
+								"type": "text"
+							},
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email_phone",
+									"value": "info@spud.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 15:02:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "215"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Signed in successfully\",\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"ahmed kamal\",\n            \"email\": \"info@spud.com\",\n            \"phone\": \"50733441\",\n            \"authorization\": \"$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "dsdasdsadasdasdasdasdasdasdsad",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"name": "Content-Type",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "aliddmam@ttttdtz.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "12111110111000000",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "ali morad",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Mohsen",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/register",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"value": "dsdasdsadasdasdasdasdasdasdsad",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "ios",
+								"type": "text"
+							},
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"name": "Content-Type",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "alidd@sparloud.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "11111111",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "ali morad",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 15:03:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "238"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Registered successfully\",\n    \"data\": {\n        \"user\": {\n            \"id\": 71,\n            \"name\": \"ali morad\",\n            \"last_name\": null,\n            \"email\": \"alidd@sparloud.com\",\n            \"phone\": \"11111111\",\n            \"authorization\": \"$2y$10$YZq3PRjbHmdnrTYalFL0cuMmZoM3LFa7BTkNnpisH4PG5d/udgrmS\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Forget Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": "dfsdfsdfsdfsdasdsadsfdsfdsfdf"
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "alidd@sparloud.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/forget_password",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"forget_password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Forget Password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": "dfsdfsdfsdfsdasdsadsfdsfdsfdf"
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "alidd@sparloud.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/forget_password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"forget_password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 15:12:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"An email with the new password has been sent\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Profile Update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "dsdasdsadasdasdasdasdasdasdsad",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Auth",
+						"name": "Content-Type",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "info@spud.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "50733441",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "ahmed kamal",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/profile",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Profile Update",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"value": "dsdasdsadasdasdasdasdasdasdsad",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "ios",
+								"type": "text"
+							},
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"name": "Content-Type",
+								"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "info@spud.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "50733441",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "ahmed kamal",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 15:17:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Profile info is modified successfully\",\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"ahmed kamal\",\n            \"email\": \"info@spud.com\",\n            \"phone\": \"50733441\",\n            \"authorization\": \"$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/category/1?sort=high_price",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"category",
+						"1"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "high_price"
+						}
+					]
+				},
+				"description": "size_id  المقاس\nmin_price اقل سعر\nmax_price اعلي سعر\nsort الترتيب حسب وتاخد قيمة من ثلاثة\n   - high_price \n   - offer\n   - low_price"
+			},
+			"response": [
+				{
+					"name": "Category",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 15:55:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Content-Length",
+							"value": "261"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Dental Clinics\",\n    \"data\": {\n        \"clinics\": [\n            {\n                \"id\": 25,\n                \"name\": \"Clinic 1\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/clinics/h33ot.11.png\",\n                \"address\": \"Block 1 - Street 2 - Doctors Tower - Shaab\",\n                \"favourite\": \"no\",\n                \"24_hours\": \"yes\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Profile Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "dsdasdsadasdasdasdasdasdasdsad",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Auth",
+						"name": "Content-Type",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/profile",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Profile Info",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"value": "dsdasdsadasdasdasdasdasdasdsad",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "ios",
+								"type": "text"
+							},
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"name": "Content-Type",
+								"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 15:14:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Profile\",\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"ahmed kamal\",\n            \"email\": \"info@spud.com\",\n            \"phone\": \"50733441\",\n            \"authorization\": \"$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Clinic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/clinic/26",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"clinic",
+						"26"
+					]
+				},
+				"description": "size_id  المقاس\nmin_price اقل سعر\nmax_price اعلي سعر\nsort الترتيب حسب وتاخد قيمة من ثلاثة\n   - high_price \n   - offer\n   - low_price"
+			},
+			"response": [
+				{
+					"name": "Clinic",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/clinic/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"clinic",
+								"25"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 17:31:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1075"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Clinic 1\",\n    \"data\": {\n        \"clinic\": {\n            \"id\": 25,\n            \"name\": \"Clinic 1\",\n            \"image\": \"http://localhost/Sites/HeedWeb/public/upload/clinics/h33ot.11.png\",\n            \"address\": \"Block 1 - Street 2 - Doctors Tower - Shaab\",\n            \"work_times\": \"Saturday - Friday 24 hours a day\",\n            \"knet\": \"yes\",\n            \"cash\": \"yes\",\n            \"credit_card\": \"yes\",\n            \"latitude\": \"29.184617841654415\",\n            \"longitude\": \"47.823486328125\",\n            \"services\": [\n                {\n                    \"id\": 2,\n                    \"name\": \"Aliergy & immunology\",\n                    \"image\": \"http://localhost/Sites/HeedWeb/public/upload/disciplines\",\n                    \"doctors\": [\n                        {\n                            \"id\": 1,\n                            \"name\": \"Doctor 1\",\n                            \"specialist\": \"Children Consultant\",\n                            \"image\": \"http://localhost/Sites/HeedWeb/public/upload/doctors/ZtQzU.doctor (1).png\",\n                            \"price\": 10\n                        }\n                    ]\n                },\n                {\n                    \"id\": 5,\n                    \"name\": \"Emergency\",\n                    \"image\": \"http://localhost/Sites/HeedWeb/public/upload/disciplines\",\n                    \"doctors\": [\n                        {\n                            \"id\": 2,\n                            \"name\": \"Mohamed Mahmoud\",\n                            \"specialist\": \"Eyes\",\n                            \"image\": \"http://localhost/Sites/HeedWeb/public/upload/doctors/PdMg6.doctor (1).png\",\n                            \"price\": 35\n                        }\n                    ]\n                }\n            ],\n            \"incurance_companies\": [\n                {\n                    \"id\": 5,\n                    \"name\": null,\n                    \"image\": \"http://localhost/Sites/HeedWeb/public/upload/incurance_companies\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Check Time",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Auth",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doctor_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2019-12-14",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "06:00 pm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/check_time",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"check_time"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "ios",
+								"type": "text"
+							},
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "doctor_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2019-11-14",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "12:00 pm",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/check_time",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"check_time"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 17:56:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 0,\n    \"message\": \"this time is unavaliable\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Checkout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doctor_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2019-12-14",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "06:00 pm",
+							"type": "text"
+						},
+						{
+							"key": "pay_type",
+							"value": "knet",
+							"description": "cash , knet , insurance",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Ahmed Kamal",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "50733441",
+							"type": "text"
+						},
+						{
+							"key": "insurance_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/checkout",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"checkout"
+					]
+				},
+				"description": "if pay_type == 'cash'\n   show mesaage as order is complete\n   \nelseif pay_type == 'knet'\n   i will return to you knet link open it in webview\n\n"
+			},
+			"response": [
+				{
+					"name": "Checkout Paymet Knet",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "doctor_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2019-12-14",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "06:00 pm",
+									"type": "text"
+								},
+								{
+									"key": "pay_type",
+									"value": "knet",
+									"description": "cash , knet , insurance",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Ahmed Kamal",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "50733441",
+									"type": "text"
+								},
+								{
+									"key": "insurance_id",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"checkout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 18:43:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Reservation Complete Successfully\",\n    \"data\": {\n        \"url\": \"https://kw.MyFatoorah.com/ie/050733052289796063\"\n    }\n}"
+				},
+				{
+					"name": "Checkout Payment Cash Or Insurance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "doctor_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2019-12-14",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "06:00 pm",
+									"type": "text"
+								},
+								{
+									"key": "pay_type",
+									"value": "cash",
+									"description": "cash , knet , insurance",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Ahmed Kamal",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "50733441",
+									"type": "text"
+								},
+								{
+									"key": "insurance_id",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"checkout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 18:37:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Content-Length",
+							"value": "76"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Reservation Complete Successfully\",\n    \"data\": {\n        \"url\": \"\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Medical Advice Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/medical_advice/4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"medical_advice",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Medical Advice Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/medical_advice/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"medical_advice",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:06:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1829"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"It is a long established fact that a reader will be distracted\",\n    \"data\": {\n        \"medical_advice\": {\n            \"id\": 4,\n            \"title\": \"It is a long established fact that a reader will be distracted\",\n            \"desc\": \"<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\\r\\n\\r\\n<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\",\n            \"image\": \"http://localhost/Sites/HeedWeb/public/upload/advices/L4BOz.15.png\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Reservations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Auth",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/reservations",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"reservations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reservations",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "ios",
+								"type": "text"
+							},
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/reservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"reservations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:15:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1112"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Reservations\",\n    \"data\": {\n        \"reservations\": [\n            {\n                \"id\": 11,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-12-14 , 06:00 pm\",\n                \"status\": \"new\"\n            },\n            {\n                \"id\": 10,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-12-14 , 06:00 pm\",\n                \"status\": \"new\"\n            },\n            {\n                \"id\": 9,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"new\"\n            },\n            {\n                \"id\": 8,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"new\"\n            },\n            {\n                \"id\": 7,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"new\"\n            },\n            {\n                \"id\": 6,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"new\"\n            },\n            {\n                \"id\": 5,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"new\"\n            },\n            {\n                \"id\": 4,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"new\"\n            },\n            {\n                \"id\": 3,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"done\"\n            },\n            {\n                \"id\": 2,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"done\"\n            },\n            {\n                \"id\": 1,\n                \"clinic\": \"Clinic 1\",\n                \"doctor\": \"Doctor 1\",\n                \"date\": \"2019-11-21 , 10:00 am\",\n                \"status\": \"new\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "About",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/about",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"about"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "About",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/about",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"about"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:19:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1624"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"About Us\",\n    \"data\": {\n        \"about\": {\n            \"title\": \"About Us\",\n            \"content\": \"<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\\r\\n\\r\\n<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Setting",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Auth",
+						"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/setting",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"setting"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Pages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "ios",
+								"type": "text"
+							},
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/JahrawyWeb/public/api/setting",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"JahrawyWeb",
+								"public",
+								"api",
+								"setting"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Oct 2019 22:31:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.13"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4880"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": {\n        \"Succeed\": 1,\n        \"message\": \"api.setting\"\n    },\n    \"Result\": {\n        \"pages\": [\n            {\n                \"title\": \"About Us\",\n                \"content\": \"<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\\r\\n\\r\\n<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\"\n            },\n            {\n                \"title\": \"Terms & Conditions\",\n                \"content\": \"<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\\r\\n\\r\\n<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\"\n            },\n            {\n                \"title\": \"Privacy Policy\",\n                \"content\": \"<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\\r\\n\\r\\n<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>\"\n            }\n        ],\n        \"social_media\": [\n            {\n                \"link\": \"https://www.facebook.com\",\n                \"type\": \"facebook\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Join Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Country",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Auth",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ahmed",
+							"type": "text"
+						},
+						{
+							"key": "clinic",
+							"value": "test clinic",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Kuwait - Sharq",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "50733441",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/join",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"join"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Join Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Country",
+								"type": "text",
+								"value": "1"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "1"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ahmed",
+									"type": "text"
+								},
+								{
+									"key": "clinic",
+									"value": "test clinic",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Kuwait - Sharq",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "50733441",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/join",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"join"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:25:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Your request has been sent successfully and you will be contacted soon\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Contact Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Platform",
+						"value": "ios",
+						"type": "text"
+					},
+					{
+						"key": "Country",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Auth",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/contact",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"contact"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Contact Info",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "ios",
+								"type": "text"
+							},
+							{
+								"key": "Country",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/contact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"contact"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:28:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Contact Us\",\n    \"data\": {\n        \"info\": {\n            \"email\": \"info@domain.com\",\n            \"phone\": \"00000000\",\n            \"mobile\": \"00000000\",\n            \"lat\": \"29.34629282944899\",\n            \"lng\": \"47.981514117355346\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Conact Action",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Country",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "1"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ahmed",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "test message",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "info@spark-cloud.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "50733441",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/contact",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"contact"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Join Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Country",
+								"type": "text",
+								"value": "1"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "1"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ahmed",
+									"type": "text"
+								},
+								{
+									"key": "clinic",
+									"value": "test clinic",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Kuwait - Sharq",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "50733441",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/join",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"join"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:25:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Your request has been sent successfully and you will be contacted soon\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Medical Advice",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/medical_advice",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"medical_advice"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Medical Advice",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/medical_advice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"medical_advice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:03:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1971"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Medical Advice\",\n    \"data\": {\n        \"medical_advice\": [\n            {\n                \"id\": 4,\n                \"title\": \"It is a long established fact that a reader will be distracted\",\n                \"desc\": \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anythin\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/advices/L4BOz.15.png\"\n            },\n            {\n                \"id\": 3,\n                \"title\": \"It is a long established fact that a reader will be distracted\",\n                \"desc\": \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anythin\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/advices/9vnFr.14.png\"\n            },\n            {\n                \"id\": 2,\n                \"title\": \"It is a long established fact that a reader will be distracted\",\n                \"desc\": \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anythin\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/advices/3frUo.13.png\"\n            },\n            {\n                \"id\": 1,\n                \"title\": \"It is a long established fact that a reader will be distracted\",\n                \"desc\": \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anythin\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/advices/owuNx.12.png\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Notifications",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/notifications",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"notifications"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Notifications",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/notifications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"notifications"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:33:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Content-Length",
+							"value": "547"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Notifications\",\n    \"data\": {\n        \"notifications\": [\n            {\n                \"id\": 6,\n                \"message\": \"hello\",\n                \"date\": \"07-11-2019\"\n            },\n            {\n                \"id\": 5,\n                \"message\": \"Hello\",\n                \"date\": \"07-11-2019\"\n            },\n            {\n                \"id\": 4,\n                \"message\": \"Welcome\",\n                \"date\": \"07-11-2019\"\n            },\n            {\n                \"id\": 3,\n                \"message\": \"Welcome\",\n                \"date\": \"07-11-2019\"\n            },\n            {\n                \"id\": 2,\n                \"message\": \"التنبيه بالإنجليزي\",\n                \"date\": \"24-07-2019\"\n            },\n            {\n                \"id\": 1,\n                \"message\": \"التنبيه بالإنجليزي\",\n                \"date\": \"24-07-2019\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Clinics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/clinics?sort=high_price",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"clinics"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "high_price"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Clinics",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/clinics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"clinics"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:34:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Content-Length",
+							"value": "254"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Clinics\",\n    \"data\": {\n        \"clinics\": [\n            {\n                \"id\": 25,\n                \"name\": \"Clinic 1\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/clinics/h33ot.11.png\",\n                \"address\": \"Block 1 - Street 2 - Doctors Tower - Shaab\",\n                \"favourite\": \"no\",\n                \"24_hours\": \"yes\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Favorites",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "",
+						"description": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/favorites",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"favorites"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Favorites",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"favorites"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:41:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Content-Length",
+							"value": "257"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Favorites\",\n    \"data\": {\n        \"clinics\": [\n            {\n                \"id\": 25,\n                \"name\": \"Clinic 1\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/clinics/h33ot.11.png\",\n                \"address\": \"Block 1 - Street 2 - Doctors Tower - Shaab\",\n                \"favourite\": \"yes\",\n                \"24_hours\": \"yes\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Favorites Action",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FirebaseToken",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "Platform",
+						"type": "text",
+						"value": "ios"
+					},
+					{
+						"key": "Lang",
+						"type": "text",
+						"value": "en"
+					},
+					{
+						"key": "Auth",
+						"type": "text",
+						"value": "$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "action",
+							"value": "add",
+							"description": "add - delete",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "heed.linekw.net/api/favorites_action/25",
+					"host": [
+						"heed",
+						"linekw",
+						"net"
+					],
+					"path": [
+						"api",
+						"favorites_action",
+						"25"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Favorites Action",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "FirebaseToken",
+								"type": "text",
+								"value": ""
+							},
+							{
+								"key": "Platform",
+								"type": "text",
+								"value": "ios"
+							},
+							{
+								"key": "Lang",
+								"type": "text",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "$2y$10$FwU0Qqjb3SJpdxTkjw6wf.4XF4pye8Ied0cHePLwLqc8mbm2Zx1BO"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "action",
+									"value": "add",
+									"description": "add - delete",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Sites/HeedWeb/public/api/favorites_action/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Sites",
+								"HeedWeb",
+								"public",
+								"api",
+								"favorites_action",
+								"25"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 19:45:02 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Unix) OpenSSL/1.1.1d PHP/7.2.23 mod_perl/2.0.8-dev Perl/v5.16.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Content-Length",
+							"value": "266"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"message\": \"Added successfully\",\n    \"data\": {\n        \"clinics\": [\n            {\n                \"id\": 25,\n                \"name\": \"Clinic 1\",\n                \"image\": \"http://localhost/Sites/HeedWeb/public/upload/clinics/h33ot.11.png\",\n                \"address\": \"Block 1 - Street 2 - Doctors Tower - Shaab\",\n                \"favourite\": \"yes\",\n                \"24_hours\": \"yes\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "heed.linekw.net/api"
+		}
+	]
+}

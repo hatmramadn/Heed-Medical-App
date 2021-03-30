@@ -10,7 +10,6 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 import CustomTextInput from '../../components/CustomTextInput';
-import CheckBox from '@react-native-community/checkbox';
 import {useForm, Controller} from 'react-hook-form';
 import Toast from 'react-native-toast-message';
 
@@ -21,7 +20,7 @@ const LoginScreen = ({navigation}) => {
   const {control, handleSubmit, errors} = useForm();
   const onSubmit = data => {
     axios
-      .post('http://heed.linekw.net/api/register', data)
+      .post('http://heed.linekw.net/api/login', data)
       .then(res => {
         if (res.data.status === 0) {
           Toast.show({
@@ -35,7 +34,7 @@ const LoginScreen = ({navigation}) => {
             text1: '✅ Success ',
             text2: res.data.message,
           });
-          navigation.navigate('Home');
+          navigation.replace('Home');
         }
       })
       .catch(err => {
@@ -46,12 +45,28 @@ const LoginScreen = ({navigation}) => {
         });
       });
   };
-  const [toggleCheckBox, setToggleCheckBox] = useState(false);
 
   return (
     <View style={{alignItems: 'center'}}>
       <StatusBar barStyle="light-content" />
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Register')}
+        style={{
+          position: 'absolute',
+          zIndex: 100,
+          top: 50,
+          left: 20,
+        }}>
+        <Image
+          style={{
+            width: 20,
+            height: 20,
+          }}
+          source={require('../../assets/back-arrow.png')}
+        />
+      </TouchableOpacity>
       <Image
+        resizeMode="cover"
         source={require('../../assets/header.png')}
         style={{
           width: '100%',
@@ -70,32 +85,14 @@ const LoginScreen = ({navigation}) => {
             control={control}
             render={({onChange, onBlur, value}) => (
               <CustomTextInput
-                placeholder="Name"
+                placeholder="E-maill / Phone Number"
                 value={value}
                 onBlur={onBlur}
                 handleChange={value => onChange(value)}
+                keyboardType="email-address"
               />
             )}
-            name="name"
-            rules={{required: 'Name is required'}}
-            defaultValue=""
-          />
-          {errors.name && (
-            <Text style={{color: 'red', marginBottom: 2}}>
-              {errors.name.message}
-            </Text>
-          )}
-          <Controller
-            control={control}
-            render={({onChange, onBlur, value}) => (
-              <CustomTextInput
-                placeholder="E-maill"
-                value={value}
-                onBlur={onBlur}
-                handleChange={value => onChange(value)}
-              />
-            )}
-            name="email"
+            name="email_phone"
             rules={{required: 'Email is required'}}
             defaultValue=""
           />
@@ -109,28 +106,12 @@ const LoginScreen = ({navigation}) => {
             control={control}
             render={({onChange, onBlur, value}) => (
               <CustomTextInput
-                placeholder="Mobile Number"
-                value={value}
-                onBlur={onBlur}
-                handleChange={value => onChange(value)}
-              />
-            )}
-            name="phone"
-            rules={{required: 'Phone is required'}}
-            defaultValue=""
-          />
-          {errors.phone && (
-            <Text style={{color: 'red'}}>{errors.phone.message}</Text>
-          )}
-          <Controller
-            control={control}
-            render={({onChange, onBlur, value}) => (
-              <CustomTextInput
                 secureTextEntry={true}
                 placeholder="Password"
                 value={value}
                 onBlur={onBlur}
                 handleChange={value => onChange(value)}
+                handleSubmit={handleSubmit(onSubmit)}
               />
             )}
             name="password"
@@ -142,87 +123,78 @@ const LoginScreen = ({navigation}) => {
               {errors.password.message}
             </Text>
           )}
-          <Controller
-            control={control}
-            render={({onChange, onBlur, value}) => (
-              <CustomTextInput
-                secureTextEntry={true}
-                placeholder="Password Confirmation"
-                value={value}
-                onBlur={onBlur}
-                handleChange={value => onChange(value)}
-              />
-            )}
-            name="password_confirmation"
-            rules={{required: 'Password is required'}}
-            defaultValue=""
-          />
-          {errors.password_confirmation && (
-            <Text style={{color: 'red', marginBottom: 2}}>
-              {errors.password_confirmation.message}
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Login')}
+            style={{alignSelf: 'flex-end'}}>
+            <Text
+              style={{
+                fontSize: 16,
+                color: colors.grey,
+                fontWeight: '600',
+                marginVertical: 10,
+              }}>
+              Forgot Password?
             </Text>
-          )}
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <CheckBox
-              style={{marginTop: 5, marginRight: 10, marginLeft: 3}}
-              boxType="square"
-              onAnimationType="stroke"
-              offAnimationType="stroke"
-              onTintColor={colors.main}
-              onCheckColor={colors.main}
-              disabled={false}
-              value={toggleCheckBox}
-              onValueChange={newValue => setToggleCheckBox(newValue)}
-            />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={handleSubmit(onSubmit)}
+            style={styles.regButton}
+            activeOpacity={0.5}>
+            <Text style={{color: 'white', fontSize: 20, fontWeight: '500'}}>
+              Sign in
+            </Text>
+          </TouchableOpacity>
+          <View style={{alignSelf: 'center'}}>
             <Text
               style={{
                 color: colors.grey,
                 fontSize: 16,
+                marginVertical: 20,
               }}>
-              By Accept{' '}
-              <TouchableOpacity style={{marginTop: -3}}>
+              Don't have an account?{' '}
+              <TouchableOpacity
+                onPress={() => navigation.navigate('Register')}
+                style={{marginTop: -3}}>
                 <Text
                   style={{
                     textDecorationLine: 'underline',
                     fontSize: 16,
-                    color: 'black',
+                    color: colors.main,
                   }}>
-                  Terms & Conditions
+                  Register
                 </Text>
               </TouchableOpacity>
             </Text>
           </View>
         </View>
       </KeyboardAvoidingView>
-      <TouchableOpacity
-        onPress={handleSubmit(onSubmit)}
-        style={styles.regButton}
-        activeOpacity={0.5}>
-        <Text style={{color: 'white', fontSize: 20, fontWeight: '500'}}>
-          Sign Up
-        </Text>
-      </TouchableOpacity>
-      <View>
-        <Text
+      <View style={{flexDirection: 'row', alignItems: 'center', top: 200}}>
+        <Text style={{color: colors.darkGrey, fontSize: 18}}>if Clinic</Text>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Login')}
           style={{
-            color: colors.grey,
-            fontSize: 16,
-            marginTop: 10,
+            ...styles.regButton,
+            flexDirection: 'row',
+            paddingHorizontal: 20,
+            marginLeft: 20,
           }}>
-          Have Account{' '}
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Login')}
-            style={{marginTop: -3}}>
-            <Text
-              style={{
-                textDecorationLine: 'underline',
-                fontSize: 16,
-                color: colors.main,
-              }}>
-              Login
-            </Text>
-          </TouchableOpacity>
-        </Text>
+          <Text
+            style={{
+              color: 'white',
+              fontSize: 18,
+              fontWeight: '600',
+            }}>
+            JOIN US
+          </Text>
+          <Image
+            source={require('../../assets/heart.png')}
+            style={{
+              width: 20,
+              height: 20,
+              marginLeft: 10,
+            }}
+          />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -243,7 +215,7 @@ const styles = StyleSheet.create({
     shadowRadius: 15.6,
     flex: 1,
     position: 'absolute',
-    top: '22%',
+    top: '50%',
     left: 30,
     right: 30,
   },
@@ -254,10 +226,18 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   regButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: colors.darkGrey,
-    paddingHorizontal: 100,
-    paddingVertical: 20,
-    marginTop: 210,
+    paddingVertical: 15,
+    marginTop: 10,
     borderRadius: 500,
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 2,
+      height: 2,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 15.6,
   },
 });
