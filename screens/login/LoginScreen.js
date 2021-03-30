@@ -124,7 +124,7 @@ const LoginScreen = ({navigation}) => {
             </Text>
           )}
           <TouchableOpacity
-            onPress={() => navigation.navigate('Login')}
+            onPress={() => navigation.navigate('ForgotPassword')}
             style={{alignSelf: 'flex-end'}}>
             <Text
               style={{

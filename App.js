@@ -8,6 +8,7 @@ import Toast, {BaseToast} from 'react-native-toast-message';
 import RegisterScreen from './screens/register/RegisterScreen';
 import LoginScreen from './screens/login/LoginScreen';
 import HomeScreen from './screens/home/HomeScreen';
+import ForgotPassword from './screens/forgotPassword/ForgotPassword';
 
 const Stack = createStackNavigator();
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         }}>
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
         <Stack.Screen name="Home" component={HomeScreen} />
       </Stack.Navigator>
       <Toast ref={ref => Toast.setRef(ref)} />
