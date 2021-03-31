@@ -24,7 +24,8 @@
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^2.18.1",
     "react-native-splash-screen": "^3.2.0",
-    "react-native-toast-message": "^1.4.9"
+    "react-native-toast-message": "^1.4.9",
+    "react-native-web-swiper": "^2.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
