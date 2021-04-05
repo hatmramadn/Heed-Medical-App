@@ -10,3 +10,6 @@ export function replace(...args) {
 }
 
 // add other navigation functions that you need and export them
+export function navigate(name, params) {
+  navigationRef.current?.navigate(name, params);
+}

@@ -103,9 +103,9 @@ const LoginScreen = ({navigation}) => {
             rules={{required: 'Email is required'}}
             defaultValue=""
           />
-          {errors.email && (
+          {errors.email_phone && (
             <Text style={{color: 'red', marginBottom: 2}}>
-              {errors.email.message}
+              {errors.email_phone.message}
             </Text>
           )}
 

@@ -1,66 +1,96 @@
 import React from 'react';
 import {
   ScrollView,
-  Image,
   StatusBar,
   StyleSheet,
   Text,
   View,
+  ActivityIndicator,
+  Image,
 } from 'react-native';
 import Swiper from 'react-native-web-swiper';
 import axios from 'axios';
 
 import {colors} from '../../constants/colors';
+import Header from '../../components/Header';
+import Category from '../../components/Category';
 
-const HomeScreen = () => {
-  const [homeDate, setHomeData] = React.useState({});
+const HomeScreen = ({navigation}) => {
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [homeData, setHomeData] = React.useState({});
 
   React.useEffect(() => {
     axios
       .get('http://heed.linekw.net/api/home_screen')
       .then(res => {
         setHomeData(res.data.data);
-        console.log(homeDate);
+        setIsLoading(false);
       })
       .catch(err => console.log(err));
   }, []);
   return (
-    <View>
+    <View style={{flex: 1}}>
       <StatusBar barStyle="light-content" />
-      <View>
-        <Image
-          style={{
-            width: '100%',
-            resizeMode: 'contain',
-            position: 'absolute',
-            top: -60,
-            zIndex: 1,
-            // opacity: 0.1,
-          }}
-          source={require('../../assets/sticky-header.png')}
+      <Header navigation={navigation} />
+      {isLoading === true ? (
+        <ActivityIndicator
+          color={colors.main}
+          size="large"
+          style={{top: 200}}
         />
-      </View>
-      <ScrollView
-        style={{
-          zIndex: -1,
-          top: 100,
-          backgroundColor: '#eee',
-          height: '100%',
-        }}>
-        <View style={{marginTop: 33}}>
+      ) : (
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          bouncesZoom={true}
+          style={{
+            zIndex: -1,
+            top: 100,
+            backgroundColor: '#eee',
+            height: '100%',
+          }}>
           <View style={styles.adsSlider}>
             <Swiper
               horizontal
               loop
-              timeout={2}
+              timeout={3}
               controlsProps={{
                 nextTitle: null,
                 prevTitle: null,
-                dotActiveStyle: {backgroundColor: colors.main},
-              }}></Swiper>
+                dotActiveStyle: {
+                  backgroundColor: colors.main,
+                },
+              }}>
+              <Image
+                style={{
+                  width: '100%',
+                  height: 80,
+                }}
+                source={{
+                  uri: `${homeData.slider[0].image}/n3ai1.static-banner1.png`,
+                }}
+              />
+              <Image
+                style={{
+                  width: '100%',
+                  height: 80,
+                }}
+                source={{
+                  uri: `${homeData.slider[0].image}/n3ai1.static-banner1.png`,
+                }}
+              />
+            </Swiper>
           </View>
-        </View>
-      </ScrollView>
+          <View style={styles.categoriesContainer}>
+            {homeData.categories.map(category => (
+              <Category
+                category={category}
+                key={category.id}
+                handlePress={() => navigation.navigate('Clinic')}
+              />
+            ))}
+          </View>
+        </ScrollView>
+      )}
     </View>
   );
 };
@@ -69,7 +99,12 @@ export default HomeScreen;
 
 const styles = StyleSheet.create({
   adsSlider: {
+    height: 80,
     backgroundColor: 'white',
-    height: 50,
+    marginTop: 30,
+  },
+  categoriesContainer: {
+    flex: 1,
+    margin: 3,
   },
 });

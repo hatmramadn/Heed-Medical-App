@@ -13,6 +13,7 @@ import CustomTextInput from '../../components/CustomTextInput';
 import CheckBox from '@react-native-community/checkbox';
 import {useForm, Controller} from 'react-hook-form';
 import Toast from 'react-native-toast-message';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import {colors} from '../../constants/colors';
 import axios from 'axios';
@@ -30,15 +31,22 @@ const RegisterScreen = ({navigation}) => {
             text2: res.data.message,
           });
         } else {
-          Toast.show({
-            type: 'success',
-            text1: '✅ Success ',
-            text2: res.data.message,
-          });
-          navigation.replace('Home');
+          const token = JSON.stringify(res.data.data.user.authorization);
+          const successMsg = res.data.message;
+          AsyncStorage.setItem('token', token)
+            .then(res => {
+              Toast.show({
+                type: 'success',
+                text1: '✅ Success ',
+                text2: successMsg,
+              });
+              navigation.replace('Home');
+            })
+            .catch(err => console.log(err));
         }
       })
       .catch(err => {
+        console.log(err);
         Toast.show({
           type: 'error',
           text1: '❌ Error',
