@@ -1,19 +1,9 @@
 import React from 'react';
-import {
-  TouchableOpacity,
-  Image,
-  Text,
-  View,
-  StyleSheet,
-  Dimensions,
-} from 'react-native';
+import {TouchableOpacity, Image, Text, View, StyleSheet} from 'react-native';
 
-const Category = ({category, handlePress}) => {
+const Clinic = ({clinic, handlePress}) => {
   return (
-    <TouchableOpacity
-      onPress={handlePress}
-      activeOpacity={0.9}
-      key={category.id}>
+    <TouchableOpacity onPress={handlePress} activeOpacity={0.9}>
       <View style={{marginBottom: 4, justifyContent: 'center'}}>
         <View
           style={{
@@ -24,26 +14,29 @@ const Category = ({category, handlePress}) => {
             zIndex: 1,
             opacity: 0.4,
           }}></View>
-        <Image
-          style={{
-            width: 50,
-            height: 50,
-            position: 'absolute',
-            alignSelf: 'center',
-            zIndex: 2,
-          }}
-          source={{uri: category.icon}}
-        />
         <Text
           style={{
             position: 'absolute',
             alignSelf: 'center',
-            zIndex: 3,
-            bottom: 35,
+            zIndex: 2,
+            bottom: 40,
+            left: 20,
             fontSize: 20,
             color: 'white',
           }}>
-          {`Test Category ${category.name} `}
+          {`Test Clinic ${clinic.name}`}
+        </Text>
+        <Text
+          style={{
+            position: 'absolute',
+            alignSelf: 'center',
+            zIndex: 2,
+            bottom: 10,
+            left: 20,
+            fontSize: 20,
+            color: 'white',
+          }}>
+          {`Location ${clinic.address} `}
         </Text>
         <Image
           style={{
@@ -51,7 +44,7 @@ const Category = ({category, handlePress}) => {
             opacity: 1,
           }}
           source={{
-            uri: `${category.image}`,
+            uri: `${clinic.image}`,
           }}
         />
       </View>
@@ -59,6 +52,6 @@ const Category = ({category, handlePress}) => {
   );
 };
 
-export default Category;
+export default Clinic;
 
 const styles = StyleSheet.create({});

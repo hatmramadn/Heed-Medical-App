@@ -6,17 +6,34 @@ import {
   TouchableOpacity,
   TextInput,
   Image,
+  Platform,
+  StatusBar,
 } from 'react-native';
 import {colors} from '../constants/colors';
 
-const Header = ({navigation}) => {
+const Header = ({navigation, placeholder}) => {
   return (
-    <View>
+    <View style={{width: '100%', height: 30}}>
+      <StatusBar
+        translucent={Platform.OS === 'android' ? true : false}
+        backgroundColor={Platform.OS === 'android' ? 'transparent' : null}
+      />
+      <Image
+        style={{
+          width: '100%',
+          resizeMode: 'contain',
+          position: 'absolute',
+          top: -65,
+        }}
+        source={require('../assets/sticky-header.png')}
+      />
       <View
         style={{
           position: 'absolute',
-          top: 85,
-          zIndex: 2,
+          alignItems: 'center',
+          justifyContent: 'center',
+          top: 75,
+          zIndex: 10,
           alignSelf: 'center',
           width: 300,
         }}>
@@ -25,18 +42,20 @@ const Header = ({navigation}) => {
             width: 20,
             height: 20,
             position: 'absolute',
-            top: 8,
+            top: Platform.OS === 'ios' ? 10 : 15,
             left: 15,
             zIndex: 20,
           }}
           source={require('../assets/search-main-color.png')}
         />
         <TextInput
-          placeholder="Search for departments..."
+          placeholder={placeholder}
           placeholderTextColor={colors.main}
           style={{
+            width: '100%',
             backgroundColor: 'white',
             paddingVertical: 10,
+            paddingBottom: 10,
             paddingHorizontal: 45,
             borderRadius: 50,
           }}
@@ -50,7 +69,7 @@ const Header = ({navigation}) => {
         style={{
           position: 'absolute',
           zIndex: 100,
-          top: 50,
+          top: Platform.OS === 'ios' ? 40 : 35,
           left: 20,
         }}>
         <Image
@@ -66,21 +85,21 @@ const Header = ({navigation}) => {
         style={{
           position: 'absolute',
           zIndex: 100,
-          top: 50,
+          top: Platform.OS === 'ios' ? 40 : 35,
           right: 20,
         }}>
         <Image
           style={{
-            width: 25,
-            height: 25,
+            width: 20,
+            height: 20,
           }}
           source={require('../assets/notification.png')}
         />
         <View
           style={{
             backgroundColor: 'red',
-            width: 18,
-            height: 18,
+            width: 15,
+            height: 15,
             position: 'absolute',
             top: -5,
             right: -5,
@@ -92,24 +111,13 @@ const Header = ({navigation}) => {
             style={{
               color: 'white',
               fontWeight: 'bold',
-              fontSize: 12,
+              fontSize: 8,
               marginBottom: 2,
             }}>
             1
           </Text>
         </View>
       </TouchableOpacity>
-      <Image
-        style={{
-          width: '100%',
-          resizeMode: 'contain',
-          position: 'absolute',
-          top: -60,
-          zIndex: 1,
-          // opacity: 0.1,
-        }}
-        source={require('../assets/sticky-header.png')}
-      />
     </View>
   );
 };

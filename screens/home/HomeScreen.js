@@ -31,7 +31,7 @@ const HomeScreen = ({navigation}) => {
   return (
     <View style={{flex: 1}}>
       <StatusBar barStyle="light-content" />
-      <Header navigation={navigation} />
+      <Header navigation={navigation} placeholder="Search for departments" />
       {isLoading === true ? (
         <ActivityIndicator
           color={colors.main}
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   adsSlider: {
     height: 80,
     backgroundColor: 'white',
-    marginTop: 30,
+    // marginTop: 30,
   },
   categoriesContainer: {
     flex: 1,

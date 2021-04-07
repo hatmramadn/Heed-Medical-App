@@ -8,6 +8,8 @@ import {
   TouchableOpacity,
   Dimensions,
   KeyboardAvoidingView,
+  ScrollView,
+  Platform,
 } from 'react-native';
 import CustomTextInput from '../../components/CustomTextInput';
 import CheckBox from '@react-native-community/checkbox';
@@ -57,7 +59,7 @@ const RegisterScreen = ({navigation}) => {
   const [toggleCheckBox, setToggleCheckBox] = useState(false);
 
   return (
-    <View style={{alignItems: 'center'}}>
+    <ScrollView contentContainerStyle={{alignItems: 'center'}}>
       <StatusBar barStyle="light-content" />
       <Image
         source={require('../../assets/header.png')}
@@ -68,7 +70,7 @@ const RegisterScreen = ({navigation}) => {
       />
       <KeyboardAvoidingView
         enabled
-        behavior="position"
+        behavior={Platform.OS === 'ios' ? 'position' : 'padding'}
         style={styles.container}>
         <View style={styles.innerContainer}>
           <Text style={{color: colors.main, fontSize: 24, marginBottom: 20}}>
@@ -235,7 +237,7 @@ const RegisterScreen = ({navigation}) => {
           </TouchableOpacity>
         </Text>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 

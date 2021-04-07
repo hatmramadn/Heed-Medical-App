@@ -8,6 +8,8 @@ import {
   TouchableOpacity,
   Dimensions,
   KeyboardAvoidingView,
+  ScrollView,
+  Platform,
 } from 'react-native';
 import CustomTextInput from '../../components/CustomTextInput';
 import {useForm, Controller} from 'react-hook-form';
@@ -54,155 +56,160 @@ const LoginScreen = ({navigation}) => {
   };
 
   return (
-    <View style={{alignItems: 'center'}}>
-      <StatusBar barStyle="light-content" />
-      <TouchableOpacity
-        onPress={() => navigation.navigate('Register')}
-        style={{
-          position: 'absolute',
-          zIndex: 100,
-          top: 50,
-          left: 20,
-        }}>
-        <Image
-          style={{
-            width: 20,
-            height: 20,
-          }}
-          source={require('../../assets/back-arrow.png')}
-        />
-      </TouchableOpacity>
-      <Image
-        resizeMode="cover"
-        source={require('../../assets/header.png')}
-        style={{
-          width: '100%',
-          height: Dimensions.get('screen').height / 1.7,
-        }}
-      />
-      <KeyboardAvoidingView
-        enabled
-        behavior="position"
-        style={styles.container}>
-        <View style={styles.innerContainer}>
-          <Text style={{color: colors.main, fontSize: 24, marginBottom: 20}}>
-            Login
-          </Text>
-          <Controller
-            control={control}
-            render={({onChange, onBlur, value}) => (
-              <CustomTextInput
-                placeholder="E-maill / Phone Number"
-                value={value}
-                onBlur={onBlur}
-                handleChange={value => onChange(value)}
-                keyboardType="email-address"
-              />
-            )}
-            name="email_phone"
-            rules={{required: 'Email is required'}}
-            defaultValue=""
-          />
-          {errors.email_phone && (
-            <Text style={{color: 'red', marginBottom: 2}}>
-              {errors.email_phone.message}
-            </Text>
-          )}
-
-          <Controller
-            control={control}
-            render={({onChange, onBlur, value}) => (
-              <CustomTextInput
-                secureTextEntry={true}
-                placeholder="Password"
-                value={value}
-                onBlur={onBlur}
-                handleChange={value => onChange(value)}
-                handleSubmit={handleSubmit(onSubmit)}
-              />
-            )}
-            name="password"
-            rules={{required: 'Password is required'}}
-            defaultValue=""
-          />
-          {errors.password && (
-            <Text style={{color: 'red', marginBottom: 2}}>
-              {errors.password.message}
-            </Text>
-          )}
+    <View style={{width: '100%', height: '100%'}}>
+      <ScrollView
+        contentContainerStyle={{alignItems: 'center', height: '100%'}}>
+        <StatusBar barStyle="light-content" />
+        <View style={{width: '100%'}}>
           <TouchableOpacity
-            onPress={() => navigation.navigate('ForgotPassword')}
-            style={{alignSelf: 'flex-end'}}>
-            <Text
-              style={{
-                fontSize: 16,
-                color: colors.grey,
-                fontWeight: '600',
-                marginVertical: 10,
-              }}>
-              Forgot Password?
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={handleSubmit(onSubmit)}
-            style={styles.regButton}
-            activeOpacity={0.5}>
-            <Text style={{color: 'white', fontSize: 20, fontWeight: '500'}}>
-              Sign in
-            </Text>
-          </TouchableOpacity>
-          <View style={{alignSelf: 'center'}}>
-            <Text
-              style={{
-                color: colors.grey,
-                fontSize: 16,
-                marginVertical: 20,
-              }}>
-              Don't have an account?{' '}
-              <TouchableOpacity
-                onPress={() => navigation.navigate('Register')}
-                style={{marginTop: -3}}>
-                <Text
-                  style={{
-                    textDecorationLine: 'underline',
-                    fontSize: 16,
-                    color: colors.main,
-                  }}>
-                  Register
-                </Text>
-              </TouchableOpacity>
-            </Text>
-          </View>
-        </View>
-      </KeyboardAvoidingView>
-      <View style={{flexDirection: 'row', alignItems: 'center', top: 200}}>
-        <Text style={{color: colors.darkGrey, fontSize: 18}}>if Clinic</Text>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('Login')}
-          style={{
-            ...styles.regButton,
-            flexDirection: 'row',
-            paddingHorizontal: 20,
-            marginLeft: 20,
-          }}>
-          <Text
+            onPress={() => navigation.navigate('Register')}
             style={{
-              color: 'white',
-              fontSize: 18,
-              fontWeight: '600',
+              position: 'absolute',
+              zIndex: 100,
+              top: 50,
+              left: 20,
             }}>
-            JOIN US
-          </Text>
+            <Image
+              style={{
+                width: 20,
+                height: 20,
+              }}
+              source={require('../../assets/back-arrow.png')}
+            />
+          </TouchableOpacity>
           <Image
-            source={require('../../assets/heart.png')}
+            resizeMode="cover"
+            source={require('../../assets/header.png')}
             style={{
-              width: 20,
-              height: 20,
-              marginLeft: 10,
+              width: '100%',
+              height: Dimensions.get('screen').height / 1.7,
             }}
           />
-        </TouchableOpacity>
-      </View>
+        </View>
+        <KeyboardAvoidingView
+          enabled
+          behavior={Platform.OS === 'ios' ? 'position' : 'padding'}
+          style={styles.container}>
+          <View style={styles.innerContainer}>
+            <Text style={{color: colors.main, fontSize: 24, marginBottom: 10}}>
+              Login
+            </Text>
+            <Controller
+              control={control}
+              render={({onChange, onBlur, value}) => (
+                <CustomTextInput
+                  placeholder="E-maill / Phone Number"
+                  value={value}
+                  onBlur={onBlur}
+                  handleChange={value => onChange(value)}
+                  keyboardType="email-address"
+                />
+              )}
+              name="email_phone"
+              rules={{required: 'Email is required'}}
+              defaultValue=""
+            />
+            {errors.email_phone && (
+              <Text style={{color: 'red', marginBottom: 2}}>
+                {errors.email_phone.message}
+              </Text>
+            )}
+
+            <Controller
+              control={control}
+              render={({onChange, onBlur, value}) => (
+                <CustomTextInput
+                  secureTextEntry={true}
+                  placeholder="Password"
+                  value={value}
+                  onBlur={onBlur}
+                  handleChange={value => onChange(value)}
+                  handleSubmit={handleSubmit(onSubmit)}
+                />
+              )}
+              name="password"
+              rules={{required: 'Password is required'}}
+              defaultValue=""
+            />
+            {errors.password && (
+              <Text style={{color: 'red', marginBottom: 2}}>
+                {errors.password.message}
+              </Text>
+            )}
+            <TouchableOpacity
+              onPress={() => navigation.navigate('ForgotPassword')}
+              style={{alignSelf: 'flex-end'}}>
+              <Text
+                style={{
+                  fontSize: 16,
+                  color: colors.grey,
+                  fontWeight: '600',
+                  marginVertical: 10,
+                }}>
+                Forgot Password?
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={handleSubmit(onSubmit)}
+              style={styles.regButton}
+              activeOpacity={0.5}>
+              <Text style={{color: 'white', fontSize: 20, fontWeight: '500'}}>
+                Sign in
+              </Text>
+            </TouchableOpacity>
+            <View style={{alignSelf: 'center'}}>
+              <Text
+                style={{
+                  color: colors.grey,
+                  fontSize: 16,
+                  marginVertical: 10,
+                }}>
+                Don't have an account?{' '}
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('Register')}
+                  style={{marginTop: -3}}>
+                  <Text
+                    style={{
+                      textDecorationLine: 'underline',
+                      fontSize: 16,
+                      color: colors.main,
+                    }}>
+                    Register
+                  </Text>
+                </TouchableOpacity>
+              </Text>
+            </View>
+          </View>
+        </KeyboardAvoidingView>
+        <View style={{flexDirection: 'row', alignItems: 'center', top: 150}}>
+          <Text style={{color: colors.darkGrey, fontSize: 18}}>if Clinic</Text>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Login')}
+            style={{
+              ...styles.regButton,
+              flexDirection: 'row',
+              paddingHorizontal: 20,
+              marginLeft: 20,
+            }}>
+            <Text
+              style={{
+                color: 'white',
+                fontSize: 18,
+                fontWeight: '600',
+              }}>
+              JOIN US
+            </Text>
+            <Image
+              source={require('../../assets/heart.png')}
+              style={{
+                width: 20,
+                height: 20,
+                marginLeft: 10,
+              }}
+            />
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
     </View>
   );
 };
@@ -213,6 +220,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     borderRadius: 10,
+    elevation: 5,
     shadowColor: '#000000',
     shadowOffset: {
       width: 2,
@@ -222,17 +230,20 @@ const styles = StyleSheet.create({
     shadowRadius: 15.6,
     flex: 1,
     position: 'absolute',
-    top: '50%',
+    top: Platform.OS === 'ios' ? '25%' : '22%',
     left: 30,
     right: 30,
   },
   innerContainer: {
-    padding: 20,
+    paddingTop: 20,
+    paddingHorizontal: 20,
+    paddingBottom: 10,
     backgroundColor: 'white',
     flex: 1,
     borderRadius: 10,
   },
   regButton: {
+    elevation: 5,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.darkGrey,

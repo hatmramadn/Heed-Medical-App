@@ -10,7 +10,9 @@ import LoginScreen from './screens/login/LoginScreen';
 import ForgotPassword from './screens/forgotPassword/ForgotPassword';
 import WelcomeScreen from './screens/splash/WelcomeScreen';
 import MyDrawer from './navigation/Drawer';
-import ClinicScreen from './screens/clinic/ClinicScreen';
+import ClinicsScreen from './screens/clinic/ClinicsScreen';
+import ClinicOverviewScreen from './screens/clinicOverView/ClinicOverviewScreen';
+
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -25,7 +27,8 @@ export default function App() {
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
         <Stack.Screen name="Home" component={MyDrawer} />
-        <Stack.Screen name="Clinic" component={ClinicScreen} />
+        <Stack.Screen name="Clinic" component={ClinicsScreen} />
+        <Stack.Screen name="ClinicOverView" component={ClinicOverviewScreen} />
       </Stack.Navigator>
       <Toast ref={ref => Toast.setRef(ref)} />
     </NavigationContainer>

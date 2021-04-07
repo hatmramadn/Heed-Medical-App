@@ -8,7 +8,7 @@ import com.facebook.react.ReactActivity;
 // react-native-splash-screen >= 0.3.1
 import org.devio.rn.splashscreen.SplashScreen; // here
 // react-native-splash-screen < 0.3.1
-import com.cboy.rn.splashscreen.SplashScreen; //
+import org.devio.rn.splashscreen.SplashScreen;
 
 public class MainActivity extends ReactActivity {
 
