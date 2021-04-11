@@ -6,10 +6,12 @@ import {
   DrawerItem,
   DrawerContentScrollView,
 } from '@react-navigation/drawer';
+
 import {colors} from '../constants/colors';
 import HomeScreen from '../screens/home/HomeScreen';
 import ClinicsScreen from '../screens/clinic/ClinicsScreen';
 import ClinicOverView from '../screens/clinicOverView/ClinicOverviewScreen';
+
 const Drawer = createDrawerNavigator();
 
 export default function MyDrawer({navigation}) {

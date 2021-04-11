@@ -9,51 +9,35 @@ import {
   Image,
   useWindowDimensions,
   Dimensions,
+  FlatList,
 } from 'react-native';
 import Swiper from 'react-native-web-swiper';
 import axios from 'axios';
-import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
+
+import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 
 import {colors} from '../../constants/colors';
 import Header from '../../components/Header';
+import ReservationStack from '../../navigation/ReservationStack';
+
+import InfoTab from '../../navigation/TopTabs';
+
+const Tab = createMaterialTopTabNavigator();
 
 const ClinicOverviewScreen = ({route, navigation}) => {
-  const FirstRoute = () => (
-    <View style={{flex: 1}}>
-      <Text>this is services</Text>
-    </View>
-  );
-
-  const SecondRoute = () => (
-    <View style={{flex: 1, backgroundColor: '#673ab7'}} />
-  );
-  const layout = useWindowDimensions();
-
-  const [index, setIndex] = React.useState(0);
-  const [routes] = React.useState([
-    {key: 'first', title: 'Services'},
-    {key: 'second', title: 'Info'},
-  ]);
-
-  const renderScene = SceneMap({
-    first: FirstRoute,
-    second: SecondRoute,
-  });
-
   const [isLoading, setIsLoading] = React.useState(true);
   const [clinicData, setClinicData] = React.useState({});
 
   React.useEffect(() => {
-    console.log(route.params.id);
     axios
       .get(`http://heed.linekw.net/api/clinic/${route.params.id}`)
       .then(res => {
         setClinicData(res.data.data);
-        console.log(res.data.data);
         setIsLoading(false);
       })
       .catch(err => console.log(err));
   }, [route.params.id]);
+
   return (
     <View style={{height: '100%'}}>
       <StatusBar barStyle="light-content" />
@@ -158,26 +142,24 @@ const ClinicOverviewScreen = ({route, navigation}) => {
           <View
             style={{
               flex: 1,
-              height: Dimensions.get('screen').height / 1.4,
+              height: Dimensions.get('screen').height / 1.1,
             }}>
-            <TabView
-              renderTabBar={props => (
-                <TabBar
-                  renderLabel={({route, focused, color}) => (
-                    <Text style={{color: colors.main, fontWeight: 'bold'}}>
-                      {route.title}
-                    </Text>
-                  )}
-                  {...props}
-                  indicatorStyle={{backgroundColor: colors.main}}
-                  style={{backgroundColor: 'white'}}
-                />
-              )}
-              navigationState={{index, routes}}
-              renderScene={renderScene}
-              onIndexChange={setIndex}
-              initialLayout={{width: layout.width}}
-            />
+            <Tab.Navigator
+              tabBarOptions={{
+                activeTintColor: colors.main,
+                inactiveTintColor: 'black',
+                indicatorStyle: {
+                  backgroundColor: colors.main,
+                },
+              }}
+              swipeEnabled={true}>
+              <Tab.Screen name="Services">
+                {props => (
+                  <ReservationStack {...props} clinicData={clinicData} />
+                )}
+              </Tab.Screen>
+              <Tab.Screen name="Info" component={InfoTab} />
+            </Tab.Navigator>
           </View>
         </ScrollView>
       )}
