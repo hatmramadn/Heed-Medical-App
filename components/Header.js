@@ -13,7 +13,11 @@ import {colors} from '../constants/colors';
 
 const Header = ({navigation, placeholder}) => {
   return (
-    <View style={{width: '100%', height: 30}}>
+    <View
+      style={{
+        width: '100%',
+        height: 30,
+      }}>
       <StatusBar
         translucent={Platform.OS === 'android' ? true : false}
         backgroundColor={Platform.OS === 'android' ? 'transparent' : null}
@@ -24,6 +28,7 @@ const Header = ({navigation, placeholder}) => {
           resizeMode: 'contain',
           position: 'absolute',
           top: -65,
+          backgroundColor: 'transparent',
         }}
         source={require('../assets/sticky-header.png')}
       />

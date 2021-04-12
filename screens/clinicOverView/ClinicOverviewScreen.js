@@ -20,7 +20,7 @@ import {colors} from '../../constants/colors';
 import Header from '../../components/Header';
 import ReservationStack from '../../navigation/ReservationStack';
 
-import InfoTab from '../../navigation/TopTabs';
+import ClinicInfoScreen from '../clinicInfo/ClinicInfoScreen';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -142,7 +142,7 @@ const ClinicOverviewScreen = ({route, navigation}) => {
           <View
             style={{
               flex: 1,
-              height: Dimensions.get('screen').height / 1.1,
+              height: Dimensions.get('screen').height * 1.1,
             }}>
             <Tab.Navigator
               tabBarOptions={{
@@ -158,7 +158,11 @@ const ClinicOverviewScreen = ({route, navigation}) => {
                   <ReservationStack {...props} clinicData={clinicData} />
                 )}
               </Tab.Screen>
-              <Tab.Screen name="Info" component={InfoTab} />
+              <Tab.Screen name="Info">
+                {props => (
+                  <ClinicInfoScreen {...props} clinicData={clinicData.clinic} />
+                )}
+              </Tab.Screen>
             </Tab.Navigator>
           </View>
         </ScrollView>

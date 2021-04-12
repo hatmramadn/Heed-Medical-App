@@ -28,7 +28,7 @@ const CustomTextInput = ({
 const styles = StyleSheet.create({
   inputStyle: {
     paddingVertical: 15,
-    paddingHorizontal: 10,
+    paddingHorizontal: 20,
     fontSize: 16,
     borderWidth: 1,
     borderColor: colors.grey,
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   inputActive: {
     paddingVertical: 15,
-    paddingHorizontal: 10,
+    paddingHorizontal: 20,
     fontSize: 16,
     borderWidth: 1,
     borderColor: colors.main,

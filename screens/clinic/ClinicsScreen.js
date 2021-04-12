@@ -24,7 +24,6 @@ const ClinicsScreen = ({navigation}) => {
       .get('http://heed.linekw.net/api/clinics?sort=high_price')
       .then(res => {
         setclinicsData(res.data.data.clinics);
-        console.log(res.data.data);
         setIsLoading(false);
       })
       .catch(err => console.log(err));

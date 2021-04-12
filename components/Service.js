@@ -6,7 +6,10 @@ const Service = ({image, title, handlePress}) => {
   return (
     <View style={{alignItems: 'center'}}>
       <TouchableOpacity onPress={handlePress} style={styles.container}>
-        <Image style={{width: 100, height: 100}} source={{uri: image}} />
+        <Image
+          style={{width: 100, height: 100, borderRadius: 50}}
+          source={{uri: image}}
+        />
       </TouchableOpacity>
       <Text>{`Service name ${title}`}</Text>
     </View>
