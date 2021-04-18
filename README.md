@@ -8,6 +8,7 @@ https://user-images.githubusercontent.com/20639687/115133894-e27f2580-a00b-11eb-
 - Register / Login 
 - Auto Login
 - Splash Screen
+- Custom App bar Design
 - Form Validation.
 - Async Storage.
 - Toast Alerts
